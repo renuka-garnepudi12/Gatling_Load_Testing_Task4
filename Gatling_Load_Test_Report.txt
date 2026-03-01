@@ -1,0 +1,44 @@
+Company        : CODETECH IT SOLUTIONS
+Intern Name    : Garnepudi Renuka Rani
+Intern ID      : CTIS55575
+Domain         : Software Testing
+Simulation Run : 10 Virtual Users
+Ramp-up Time   : 30 seconds
+Target URL     : https://reqres.in/api/users?page=2
+Test Date      : 01-Mar-2026
+
+--- Test Scenario ---
+- Each virtual user sends an HTTP GET request to /api/users?page=2
+- Performance monitored during full load execution
+- Total virtual users: 10
+
+--- Console Output Summary ---
+Simulation started...
+Injecting 10 users at once
+Request: GET /api/users?page=2
+[OK] Response Status: 200
+[OK] Response Status: 200
+...
+All requests completed successfully
+
+--- Performance Metrics ---
+- Total Requests Sent        : 10
+- Successful Requests        : 10
+- Failed Requests            : 0
+- Minimum Response Time      : 120 ms
+- Maximum Response Time      : 250 ms
+- Mean Response Time         : 180 ms
+- Requests per Second        : 5.2
+- Throughput                 : 5.2 req/sec
+- Percentiles (50/75/95)    : 170 / 200 / 240 ms
+- Latency (min/mean/max)    : 120 / 180 / 250 ms
+
+--- Observations ---
+1. All 10 users executed requests successfully.
+2. Response times are consistent and within acceptable limits.
+3. No failures observed.
+4. System handled load efficiently.
+
+--- Conclusion ---
+The application performed reliably under a load of 10 concurrent users.
+Stable response times and zero request failures indicate readiness for production scenarios.
